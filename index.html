@@ -6,65 +6,48 @@
     <meta name="author" content="Joanne Wu">
     <title>Joanne Wu's E-Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Space+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="blue">
-        <nav>
-          <a href="/index.html">Home</a> |
-          <a href="/aboutme.html">About</a> |
-          <a href="/experience.html">Skills & Experience</a> |
-          <a href="/contact.html">Contact</a> |
+      <div>
+        <nav class="flex-nav">
+          <a href="/index.html">Home</a>
+          <a href="/aboutme.html">About</a>
+          <a href="/experience.html">Skills & Experience</a>
+          <a href="/contact.html">Contact</a>
         </nav>
       </div>
       <h1>Nice to e-meet you, I'm Joanne Wu!</h1>
-      <h2>I love all things <em>aesthetic</em>, so naturally, frontend has my heart!! </h2>
-      <h3>Incoming Full Stack Engineer at Nordstrom</h3>
     </header>
-    <br>
+    <hr>
     <aside>
-      <section id="funfacts">
+      <section>
         <h2>Bio</h2>
-        <p>These are some pictures of me <i>(Note: you can change the window size to see different pictures!)</i></p>
-        <template>
-          <h2>bonus pic</h2>
-          <img src="src/me.jpg">
-        </template>
-        <picture>
-          <source media="(min-width:1200px)" srcset="src/me2.png">
-          <source media="(min-width:800px)" srcset="src/me3.png">
-          <img src="src/meandjimmy.png" alt="pictures of me">
-        </picture>
-        <p>This is a video of me today with my new haircut and curls.</p>
-        <video width="230" height="400" controls>
-          <source src="src/me.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
+        <p>This is me!</p>
+        <div class="pics-flex"> 
+          <picture id="pic1">
+            <img src="src/me2.png" alt="me with sharkshark">
+          </picture>
+          <picture id="pic2">
+            <img src="src/me3.png" alt="me in a random person's house">
+          </picture>
+          <picture id="pic2">
+            <img src="src/meandjimmy.png" alt="me and my boyfriend">
+          </picture>
+        </div>
         <h2>Interests</h2>
 
         <p>Here are some of my favorite things in life:</p>
         <ul>
-            <li>Laying on the floor</li>
-            <li>Drinking</li>
-            <li>Theorycrafting outfits</li>
-            <li>Late night talks with my favorite friends</li>
+          <li>Laying on the floor</li>
+          <li>Drinking</li>
+          <li>Theorycrafting outfits</li>
+          <li>Late night talks with my favorite friends</li>
         </ul>
-        <p>Favorite Food</p>
-        <ol>
-            <li>Flamin' Hot Minis</li>
-            <li>Shanghai Zhongzi</li>
-            <li>Sticy Rice Shumai</li>
-            <li>Lemon Cake w/ Whipped Cream</li>
-            <li>Really icy (but also fully blended) oreo boba shake from Happy Lemon</li>
-        </ol>
-        <details>
-          <summary>Other things I've been up to recently</summary>
-          <p>I started playing Hearthstone again, except now I only play when I'm on the treadmill. Below in an image of my favorite theorycrafted deck pre lightning bloom nerf</p>
-          <figure>
-            <img src="src/hs.png" alt="lightning bloom hearthstone deck">
-            <figcaption>The most fun deck in existence except it doesn't exist anymore :' (</figcaption>
-          </figure>
-        </details>
+        <hr>
         <pre>Here is a song I find really pretty:
           Do I Wanna Know (Kuma Remix)</pre>
         <audio controls>
@@ -101,48 +84,14 @@
           </tr>
         </table>
         <br>
-        <fieldset>
-          <legend>Best Language</legend>
-          <label>Which language out of these is your favorite?</label>
-          <select>
-            <optgroup label="Decisive answers">
-              <option>Python</option>
-              <option>C++</option>
-              <option>Java</option>
-            </optgroup>
-            <optgroup label="Indecisive answer">
-              <option>Can't choose</option>
-            </optgroup>
-          </select>
-          <input type="submit" value="Submit">
-      </fieldset>
-      <canvas width="2000" height="10">
-        Your browser does not support the HTML canvas tag.
-      </canvas>
-      <svg width="40" height="40">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" />
-      </svg>
-        <h2>Click the button to read more about why I chose programming</h2>
-        <button type="button" onclick="alert('I love the flexibility of coding -- that there are so many unique solutions to the same problem. Because after solving, we can optimize, there is good room for improvement! Its also open source like this link')"><code>clickMe()</code></button>
         <hr>
       </section>
     </main>
     <footer>
       <form>
-          <label>Is there anything you would like to see me improve with this site? I value your feedback greatly.</label>
-          <input list="improvement">
-          <datalist id="improvement">
-            <option value="Aesthetic"></option>
-            <option value="Intuition"></option>
-            <option value="Both"></option>
-            <option value="None"></option>
-          </datalist>
-          <input type="submit" value="Submit">
-          <p><label>Message Me</label></p>
           <textarea>Let's connect!</textarea><br>
-          <button type="button" onclick="alert('Message received. I will get back to you within 3 business days!')">Submit</button>
+          <button type="button" >Submit</button>
       </form>
-      <p>Contact me at <b>310-989-7462</b></p>
     </footer>
   </body>
 </html>
