@@ -1,3 +1,27 @@
+  /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  p, li, textarea, button {
+    font-size:x-small;
+  }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  p, li, textarea, button {
+    font-size: small;
+  }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px){
+  p, li, textarea, button {
+    font-size:medium
+  }
+}
+
+
+
+
 :root{
   --babypink: #f5d7f5;
   --babypink2: rgba(255, 255, 255, 0.452);
@@ -95,9 +119,6 @@ textarea {
   padding-top: 3px;
 }
 
-p, li, textarea, button {
-  font-size: small;
-}
 /* #experience table{
   padding-top: 3px;
   font-size: small;
