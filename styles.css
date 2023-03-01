@@ -3,6 +3,15 @@
   p, li, textarea, button {
     font-size:x-small;
   }
+  .flex-nav a{
+    flex: 1;
+    /* color: rgb(97, 176, 187); */
+    color:white;
+    font-size: medium;
+    height: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
 }
   
 /* Media Query for low resolution  Tablets, Ipads */
@@ -10,12 +19,32 @@
   p, li, textarea, button {
     font-size: small;
   }
+
+  .flex-nav a{
+    flex: 1;
+    /* color: rgb(97, 176, 187); */
+    color:white;
+    font-size: medium;
+    height: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 }
   
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px){
   p, li, textarea, button {
     font-size:medium
+  }
+
+  .flex-nav a{
+    flex: 1;
+    /* color: rgb(97, 176, 187); */
+    color:white;
+    font-size: medium;
+    height: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 
@@ -49,15 +78,7 @@
   
 }
 
-.flex-nav a{
-  flex: 1;
-  /* color: rgb(97, 176, 187); */
-  color:white;
-  font-size: medium;
-  height: 100%;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
+
 
 .flex-nav a:hover{
   color: pink;
